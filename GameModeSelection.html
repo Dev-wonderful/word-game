@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mode Selection</title>
+        
+        <style>
+            body{
+                background-color: rgb(99, 109, 141);
+                
+            }
+            #maindiv{
+                background-color: rgb(18, 18, 44);
+                width: 650px;
+                height: 450px;
+                position: relative;
+                left: 350px;
+                top: 100px;
+                border-radius: 10px;
+            }
+            #selectiondiv{
+                background-color: none;
+                border-style: groove;
+                border: thick 2px ;
+                border-color: crimson;
+                width: 550px;
+                height: 350px;
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+            }
+            #heading{
+                background-color: none;
+                margin: 0px;
+                width: 100%;
+                color: tan;
+            }
+            #holder{
+                background-color: none;
+                width: 100%;
+                height: 80%;
+            }
+            #holder p{
+                font-size: 25px;
+                color: crimson;
+            }
+            #link{
+                text-decoration: none;
+                color: lavenderblush;
+                font-size: 45px;
+                transition: font-size 0.5s;
+            }
+            #link:hover{
+                font-size: larger;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="maindiv">
+            <div id="selectiondiv">
+                <h1 id="heading">Hi  !!</h1>
+
+                <div id="holder">
+                    <p>Select The Mode You Want</p>
+
+                    <p><a href="GameRandomMode.html" id="link">Random</a></p>
+
+                    <p><a href="GameChallengeMode.html" id="link">Challenge</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="gamemodeselection.js"></script>
+</html>

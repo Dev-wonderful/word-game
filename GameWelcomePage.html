@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome To The Game</title>
+
+        <script src="gamewelcomepage.js"></script>
+
+        <style>
+            body{
+                background-color: rgb(99, 109, 141);
+                
+            }
+            #maindiv{
+                background-color: rgb(18, 18, 44);
+                width: 650px;
+                height: 450px;
+                position: relative;
+                left: 350px;
+                top: 100px;
+                border-radius: 10px;
+            }
+            #welcomediv{
+                background-color: none;
+                width: 550px;
+                height: 350px;
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+            }
+            .welcomedivP{
+                font-size: 20px;
+                text-align: center;
+                font-weight: bold;
+                color: rgb(212, 61, 91);
+            }
+            #welcome{
+                background-color: none;
+                font-size: 50px;
+                text-align: center;
+                font-weight: bold;
+                color: rgb(212, 61, 91);
+                margin: 2px;
+            }
+            #inputdiv{
+                background-color: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 5px;
+            }
+            #name{
+                text-align: center;
+                width: 60%;
+                line-height: 50px;
+                font-size: 30px;
+                border-radius: 5px;
+                border-style: groove;
+                border: thin;
+            }
+            #button{
+                background-color: cornflowerblue;
+                border-radius: 5px;
+                width: 30%;
+                line-height: 30px;
+                font-size: medium;
+                border-style: groove;
+                border: thin;
+            }
+            #button:hover{
+                cursor: pointer;
+                background-color: rgb(95, 126, 184);
+            }
+            #button a{
+                text-decoration: none;
+                color: honeydew;
+                
+            }
+            
+        </style>
+    </head>
+
+    <body onload="welcomeFunction()">
+        <div id="maindiv">
+            <div id="welcomediv">
+                <p id="welcome">Welcome</p> 
+                
+                <p class="welcomedivP">To The Game Of Speed</p>
+
+                <p class="welcomedivP">If You Think You Have What It Takes, Type In Your Name And Let's Begin</p>
+
+                <div id="inputdiv">
+                    <input type="text" id="name">
+                    <button id="button" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+
+       
+    </body>
+</html>
